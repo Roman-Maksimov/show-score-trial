@@ -1,0 +1,53 @@
+@import '../../styles/settings/colors';
+@import '../../styles/mixins/responsive';
+
+.field {
+  padding: 20px;
+  width: 100%;
+  max-width: 840px;
+}
+
+.wrapper {
+  position: relative;
+  padding-bottom: 100%;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  flex: 1 1 1px;
+  position: relative;
+}
+
+.col {
+  display: flex;
+  flex: 1 1 1px;
+  flex-direction: column-reverse;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 30px;
+}
+
+.buttonsPadding {
+  flex: 1 1 8.33%;
+}
+
+.buttonsSpacing {
+  flex: 1 1 36.67%;
+}
+
+.button {
+  flex: 1 1 23.33%;
+}

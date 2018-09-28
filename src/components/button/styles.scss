@@ -1,0 +1,49 @@
+@import '../../styles/settings/colors';
+
+.button {
+  display: inline-block;
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+  background: $color-button;
+  background: linear-gradient(to bottom, $color-button-light, $color-button-dark);
+  cursor: pointer;
+  padding: 0;
+  font-size: 12pt;
+
+  &:hover {
+    .inner {
+      color: $color-black;
+    }
+  }
+
+  &:active {
+    background: $color-button;
+    background: linear-gradient(to top, $color-button-light, $color-button-dark);
+  }
+}
+
+.inner {
+  margin: 1px;
+  border-radius: 10px;
+  background-color: $color-white;
+  padding: 18px;
+  color: $color-button;
+}
+
+.buttonAccent {
+  composes: button;
+
+  .inner {
+    background: $color-button;
+    background: linear-gradient(to bottom, $color-button-accent-light, $color-button-accent-dark);
+    color: $color-white;
+  }
+
+  &:active {
+    .inner {
+      background: $color-button;
+      background: linear-gradient(to top, $color-button-accent-light, $color-button-accent-dark);
+    }
+  }
+}

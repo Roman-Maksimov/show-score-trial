@@ -1,0 +1,24 @@
+Note! For __macOS__ it might be necessary to install `watchman` (see https://github.com/facebook/create-react-app/issues/4540)
+
+# brew update
+# brew install watchman
+
+If you don't have brew, do this first:
+
+# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+
+Setup environment
+=============================
+
+To start DevServer application, build compiled version adnd make tests it's necessary to install required dependencies
+
+# yarn install
+
+
+Run tests
+=============================
+
+To run test you can use the following command
+
+# yarn test --coverage

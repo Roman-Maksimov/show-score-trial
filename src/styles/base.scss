@@ -1,0 +1,61 @@
+@import 'normalize.css';
+@import './settings/colors';
+@import './settings/typography';
+@import './mixins/animation';
+@import './mixins/responsive';
+
+html {
+  color: $color-font;
+  font-family: $font-base;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-base;
+  font-weight: 300;
+}
+
+:global(.show-sm) {
+  @include respond-from(md) {
+    display: none !important;
+  }
+}
+
+:global(.hide-sm) {
+  @include respond-only-for(sm) {
+    display: none !important;
+  }
+}
+
+:global(.show-md) {
+  @include respond-only-for(sm) {
+    display: none !important;
+  }
+
+  @include respond-from(lg) {
+    display: none !important;
+  }
+}
+
+:global(.hide-md) {
+  @include respond-only-for(md) {
+    display: none !important;
+  }
+}
+
+:global(.show-lg) {
+  @include respond-to(lg) {
+    display: none !important;
+  }
+}
+
+:global(.hide-lg) {
+  @include respond-from(lg) {
+    display: none !important;
+  }
+}

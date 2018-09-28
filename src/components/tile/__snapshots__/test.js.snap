@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render black tile 1`] = `
+<div
+  className="tile"
+  onClick={[Function]}
+>
+  <div
+    className="bgBlack"
+  />
+</div>
+`;
+
+exports[`should render blue tile 1`] = `
+<div
+  className="tile"
+  onClick={[Function]}
+>
+  <div
+    className="bgBlue"
+  />
+</div>
+`;
+
+exports[`should render empty tile 1`] = `
+<div
+  className="tile"
+  onClick={[Function]}
+>
+  <div
+    className="bg"
+  />
+</div>
+`;

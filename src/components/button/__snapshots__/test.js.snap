@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render accent button 1`] = `
+<button
+  className="buttonAccent"
+>
+  <div
+    className="inner"
+  >
+    OK
+  </div>
+</button>
+`;
+
+exports[`should render common button 1`] = `
+<button
+  className="button"
+>
+  <div
+    className="inner"
+  >
+    OK
+  </div>
+</button>
+`;
+
+exports[`should render custom accent button 1`] = `
+<button
+  className="buttonAccent customButton"
+>
+  <div
+    className="inner"
+  >
+    OK
+  </div>
+</button>
+`;
+
+exports[`should render custom button 1`] = `
+<button
+  className="button customButton"
+>
+  <div
+    className="inner"
+  >
+    OK
+  </div>
+</button>
+`;
